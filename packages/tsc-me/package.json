@@ -1,0 +1,17 @@
+{
+  "name": "tsc-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lib-with-peers": "workspace:*",
+    "ag-grid-community": "29.0.0"
+  }
+}

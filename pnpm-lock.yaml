@@ -1,0 +1,44 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+
+  packages/lib-with-peers:
+    devDependencies:
+      ag-grid-community:
+        specifier: 31.0.0
+        version: 31.0.0
+
+  packages/tsc-me:
+    dependencies:
+      ag-grid-community:
+        specifier: 29.0.0
+        version: 29.0.0
+      lib-with-peers:
+        specifier: workspace:*
+        version: link:../lib-with-peers
+
+packages:
+
+  /ag-grid-community@29.0.0:
+    resolution: {integrity: sha512-onAQIqjhP1L93W5myAsfLBMBUyZPrWDb8FRulJuhjQKo8DEA4GSZ+oJHxwwLymm4biLu54zvZ+9GkTftha8gAg==}
+    dev: false
+
+  /ag-grid-community@31.0.0:
+    resolution: {integrity: sha512-OUrXSAbLs0s5DTL9G/J626IKF2mzENHtLzLo5SV0RMO34ZzQANZd1mWlahT0uhZyUFnhyyEEecJBE5nSI88VEw==}
+    dev: true
+
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: false
